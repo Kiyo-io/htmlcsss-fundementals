@@ -1,0 +1,84 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: monospace;
+  color: rgb(67, 44, 122);
+}
+h1,
+h2,
+h3 {
+  color: rgb(255, 143, 177);
+}
+h1 {
+  font: size 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+  font-family: cursive;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+li {
+  font: size 20px;
+}
+/* footer p {
+  font-size: 16px;
+} */
+/*
+article header p {
+  font-style: italic;
+}*/
+/* ID tag function is used for very simple pages that don't require updates */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+#copyright {
+  font-size: 16px;
+}
+/* Class group function used to style multiple elements for future easy updates to style */
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+.author-photos {
+  list-style: none;
+}
+.main-header {
+  background-color: rgba(224, 46, 153, 0.125);
+}
+
+aside {
+  background-color: rgb(252, 226, 219);
+  border-top: 5px double rgb(67, 44, 122);
+}
+body {
+  background-color: rgba(224, 46, 153, 0.125);
+}
+/* .first-li {font-weight: bold;} */
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-weight: bold;
+}
+li:nth-child(even) {
+  color: pink;
+}
+/* article p:last-child{color: red;} */

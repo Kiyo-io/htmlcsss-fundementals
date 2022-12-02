@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--Every HTML DOC begings with this element-->
+<html lang="en">
+  <!--This element lets the browser know this is language is HTML-->
+  <head>
+    <meta charset="UTF-8" />
+    <!--The name of the browser window-->
+    <title>The Basic Language of the Web: HTML</title>
+    <!--Internal.css style property option for simple pages located in head property---For large css coding style make seperate .css file and use link property to connect code-->
+    <!--INTERNAL CSS EXAMPLE-->
+    <style>
+      h1 {
+        color: magenta;
+      }
+    </style>
+    <link href="Style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <!--Parent Element Litteral BODY of the web page and so it's content is inside of the body. Content can include...p=paragraph h=heading to organize text-->
+      <h1>🥳 The Code Magazine</h1>
+
+      <!--a=anchor for href=hyperlink REMEMBER to make element for hyperlink to access from webpage ie. Blog-->
+      <nav><a href="blog.html">Blog</a></nav>
+    </header>
+
+    <article>
+      <header>
+        <h2>The Basic Language of the Web: HTML</h2>
+
+        <img
+          src="img/laura-jones.jpg"
+          alt="Laura Jones"
+          width="50"
+          height="50"
+        />
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
+
+        <!--!!!!JPG/ALT won't load!!!!
+    img=insert image + Attribute decribing element scr=source image file  ALT=decribes the image file for search engine-->
+        <img
+          src="img/post-img.jpg"
+          alt="HTML code on a computer screen"
+          width="500"
+          height="200"
+        />
+      </header>
+      <p>
+        All modern websites and web applications are built using three
+        <!--em ITAL's text--><em>fundamental</em>
+        technologies: HTML, CSS and JavaScript. These are the languages of the
+        web.
+      </p>
+      <p>
+        In this post, let's focus on HTML. We will learn what HTML is all about,
+        and why you too should learn it.
+      </p>
+
+      <h3>What is HTML</h3>
+      <p>
+        HTML stands for
+        <!--b and strong make text BOLD--><b>H</b>yper<strong>T</strong>ext
+        <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+        language that web developers use to structure and describe the content
+        of a webpage (not a programming language).
+      </p>
+      <p>
+        HTML consists of elements that describe different types of content:
+        paragraphs, links, headings, images, video, etc. Web browsers understand
+        HTML and render HTML code as websites.
+      </p>
+      <p>In HTML, each element is made up of 3 parts:</p>
+      <!--Parent Element OL element=ordered list-->
+      <ol>
+        <!--Child Element LI element=list item-->
+        <li class="first-li">The opening tag</li>
+        <li>The closing tag</li>
+        <li>The actual element</li>
+      </ol>
+
+      <!--Coding is fun ^.^-->
+      <p>You can learn more at the MDN Web Docs.</p>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+        target="_blank"
+      >
+        Web MDN Docs</a
+      >
+
+      <h3>Why you should learn HTML</h3>
+
+      <p>
+        There are countless reasons for learning the fundamental language of the
+        web. Here are 5 of them:
+      </p>
+      <!--Parent Element UL=unordered list for bullet points-->
+      <ul>
+        <li>To be able to use the fundamental web dev language</li>
+        <li>
+          To hand-craft beautiful websites instead of relying on tools like
+          Worpress or Wix
+        </li>
+        <li>To build web applications</li>
+        <li>To impress friends</li>
+        <li>To have fun 😃</li>
+      </ul>
+
+      <p>Hopefully you learned something new here. See you next time!</p>
+      <!--Structure element to group code and organize nav=navagation-->
+    </article>
+
+    <aside>
+      <!--Semantic HTML= organizes your code-->
+      <h4><strong>Related Posts</strong></h4>
+      <ul class="author-photos">
+        <li>
+          <img
+            src="img/related-1.jpg"
+            alt="Image of man typing code"
+            width="75"
+            height="75"
+          />
+
+          <a href="wed-dev.html"> How to Learn Web Development</a>
+          <p class="related-author">By Jonas Smith</p>
+        </li>
+        <li>
+          <img
+            src="img/related-2.jpg"
+            alt="Image of lightning strike in the dark"
+            width="75"
+            height="75"
+          />
+          <a href="The Unknown Powers of CSS">The Unknown Powers of CSS</a>
+          <p class="related-author">By Jim Dumar</p>
+        </li>
+
+        <li>
+          <img
+            src="img/related-3.jpg"
+            alt="Imagine of computer code on pc screen"
+            height="75"
+            width="75"
+          />
+          <a href="Why JavaScript is Awesome">Why JavaScript is Awesome</a>
+          <p class="related-author">By Ariana Grande</p>
+        </li>
+      </ul>
+    </aside>
+    <nav>
+      <a href="#">Back to the beginning</a>
+    </nav>
+
+    <footer>
+      <p id="copyright">Copyright &copy; 2022 by Kiyo.io</p>
+    </footer>
+  </body>
+</html>
