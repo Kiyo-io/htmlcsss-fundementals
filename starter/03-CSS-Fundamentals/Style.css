@@ -82,3 +82,15 @@ li:nth-child(even) {
   color: pink;
 }
 /* article p:last-child{color: red;} */
+#copyright {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+footer p {
+  color: green;
+}
