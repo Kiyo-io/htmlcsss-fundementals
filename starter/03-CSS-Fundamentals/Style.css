@@ -82,6 +82,30 @@ li:nth-child(even) {
   color: pink;
 }
 /* article p:last-child{color: red;} */
+
+/* Styling Hyperlinks L.ink V.isited H.over A.ctive in order*/
+a:link {
+  color: rgb(255, 143, 177);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(255, 143, 177);
+}
+
+a:hover {
+  color: purple;
+  font-weight: bold;
+  text-decoration: underline purple;
+}
+a:active {
+  background-color: aliceblue;
+  font-style: italic;
+}
+/*resolving conflicts 
+ID=1
+Class=2
+Element=3
+*/
 #copyright {
   color: red;
 }
