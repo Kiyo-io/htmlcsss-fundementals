@@ -1,12 +1,57 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+/* Universal Selector */
+/* * {
+  border-top: 10px solid black;
+} */
+* {
+  margin: 0;
+  border: 0;
+}
+
+/* PAGE SECTION */
+body {
   font-family: monospace;
   color: rgb(67, 44, 122);
+  border-top: 10px solid black;
 }
+.container {
+  width: 800px;
+  /* margin-right: auto;
+  margin-left: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: rgba(224, 46, 153, 0.125);
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+/* nav a:link,
+p {
+  font-size: 18px;
+} */
+
+nav {
+  font-size: 18px;
+}
+article {
+  margin-bottom: 60px;
+}
+.post-heaader {
+  margin-bottom: 30px;
+}
+
+aside {
+  background-color: rgb(252, 226, 219);
+  border-top: 5px double rgb(67, 44, 122);
+  padding: 50px 0;
+  width: 500px;
+}
+/* 
+SMALLER ELEMENT */
 h1,
 h2,
 h3 {
@@ -20,9 +65,12 @@ h1 {
 h2 {
   font-size: 40px;
   font-family: cursive;
+  margin-bottom: 30px;
 }
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 h4 {
   font-size: 20px;
@@ -33,9 +81,21 @@ h4 {
 p {
   font-size: 20px;
   line-height: 1.5;
+  margin-bottom: 20px;
+}
+ol {
+  margin-bottom: 20px;
+}
+ul {
+  margin-bottom: 20px;
 }
 li {
   font: size 20px;
+  margin-bottom: 10px;
+  /* display: inline; */
+}
+li:last-child {
+  margin-bottom: 0;
 }
 /* footer p {
   font-size: 16px;
@@ -60,14 +120,7 @@ article header p {
 .author-photos {
   list-style: none;
 }
-.main-header {
-  background-color: rgba(224, 46, 153, 0.125);
-}
 
-aside {
-  background-color: rgb(252, 226, 219);
-  border-top: 5px double rgb(67, 44, 122);
-}
 body {
   background-color: rgba(224, 46, 153, 0.125);
 }
@@ -101,10 +154,30 @@ a:active {
   background-color: aliceblue;
   font-style: italic;
 }
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+/* BLOCK ELEMENT TO INLINE */
+nav a:link {
+  /* background-color: orange;
+  margin: 20px;
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
 /*resolving conflicts 
 ID=1
 Class=2
 Element=3
+Universal=4
 */
 #copyright {
   color: red;
@@ -116,5 +189,5 @@ Element=3
   color: yellow;
 }
 footer p {
-  color: green;
+  color: green !important;
 }
