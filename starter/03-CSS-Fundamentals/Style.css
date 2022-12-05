@@ -37,7 +37,7 @@ p {
 } */
 
 nav {
-  font-size: 18px;
+  font-size: 15px;
 }
 article {
   margin-bottom: 60px;
@@ -60,7 +60,7 @@ h3 {
   color: rgb(255, 143, 177);
 }
 h1 {
-  font: size 26px;
+  font-size: 25px;
   text-transform: uppercase;
   font-style: italic;
 }
@@ -107,7 +107,7 @@ article header p {
   font-style: italic;
 }*/
 /* ID tag function is used for very simple pages that don't require updates */
-#author {
+.author {
   font-style: italic;
   font-size: 18px;
 }
@@ -191,10 +191,10 @@ h1::first-letter {
   font-style: normal;
   margin-right: 5px;
 }
-/* ADJACENT SIBLINNG  */
+/* ADJACENT SIBLINNG 
 h3 + p::first-line {
-  /* color: red; */
-}
+  color: red;
+} */
 
 h2 {
   position: relative;
@@ -230,4 +230,28 @@ Universal=4
 }
 footer p {
   color: green !important;
+}
+/* CSS FLOW-make interesting layouts by floating element */
+.author-img {
+  float: left;
+  padding: 20px;
+}
+.author {
+  padding-left: 80px;
+  padding: 20px;
+}
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+/* .clear {
+  clear: both;
+} */
+/* Clear Fix Hack-Best option to fix collapsed elements after floating */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
 }
