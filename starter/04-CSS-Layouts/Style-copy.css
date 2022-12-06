@@ -231,10 +231,11 @@ Universal=4
 footer p {
   color: green !important;
 }
+/* FLOATS */
 /* CSS FLOW-make interesting layouts by floating element */
-.author-img {
+/* .author-img {
   float: left;
-  padding: 20px;
+  padding: 5px;
 }
 .author {
   padding-left: 80px;
@@ -245,12 +246,12 @@ h1 {
 }
 nav {
   float: right;
-}
+} */
 /* .clear {
   clear: both;
 } */
 /* Clear Fix Hack-Best option to fix collapsed elements after floating */
-.clearfix::after {
+/* .clearfix::after {
   clear: both;
   content: "";
   display: block;
@@ -266,4 +267,6 @@ aside {
 }
 footer {
   clear: both;
-}
+} */
+
+/* FLEXBOX */
