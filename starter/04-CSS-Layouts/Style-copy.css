@@ -218,7 +218,7 @@ Universal=4
   color: yellow;
 }
 footer p {
-  color: green !important;
+  color: black !important;
 }
 /* FLOATS */
 /* CSS FLOW-make interesting layouts by floating element */
@@ -330,6 +330,5 @@ flex-grow: 0;
 aside {
 } */
 footer {
-  background-color: black;
   grid-column: 1/-1;
 }
