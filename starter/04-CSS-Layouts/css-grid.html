@@ -14,7 +14,7 @@
       }
       .el--3 {
         background-color: green;
-        /* height: 150px; */
+        height: 150px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -44,14 +44,27 @@
         /* grid-template-columns: 1fr 1fr 1fr auto; */
         /* grid-template-rows: 300px 200px; */
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr auto;
+        grid-template-rows: 1fr 1fr;
         height: 500px;
 
         /* gap: 30px; */
-        column-gap: 10px;
+        column-gap: 20px;
         row-gap: 40px;
       }
-
+      /* MOVING GRID CELLS */
+      .el--8 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+      .el--2 {
+        /* grid-column: 1; */
+        /* grid-column: 1/ span 4; */
+        grid-column: 1 / -1;
+        grid-row: 2;
+      }
+      .el--6 {
+        /* grid-row: 3 / 5; */
+      }
       .container--2 {
         display: none;
         /* STARTER */
@@ -75,7 +88,7 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
+      <!-- <div class="el el--7">(7) to</div> -->
       <div class="el el--8">(8) learn</div>
     </div>
 
