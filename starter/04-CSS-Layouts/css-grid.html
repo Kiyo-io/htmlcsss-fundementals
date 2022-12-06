@@ -40,7 +40,7 @@
         margin: 40px;
 
         /* CSS GRID */
-        display: grid;
+        /* display: grid; */
         /* grid-template-columns: 1fr 1fr 1fr auto; */
         /* grid-template-rows: 300px 200px; */
         grid-template-columns: repeat(4, 1fr);
@@ -50,6 +50,8 @@
         /* gap: 30px; */
         column-gap: 20px;
         row-gap: 40px;
+        /* TEMP */
+        display: none;
       }
       /* MOVING GRID CELLS */
       .el--8 {
@@ -66,17 +68,36 @@
         grid-row: 3 / 5;
       } */
       .container--2 {
-        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        /* ALIGNING TRACKS IN GRID CONTAINER */
+        justify-content: center;
+        /* justify-content: space-between; */
+        align-content: center;
+        gap: 50px;
+
+        /* ALIGING ITEMS IN GRID CELLS */
+        /* align is vertical track */
+        align-items: end;
+        /* justify is horizontal track*/
+        justify-items: end;
 
         /* CSS GRID */
+      }
+
+      .el--3 {
+        align-self: center;
+        justify-self: center;
       }
     </style>
   </head>
