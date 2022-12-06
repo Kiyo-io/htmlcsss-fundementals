@@ -33,18 +33,19 @@
         <header class="post-heaader">
           <h2>The Basic Language of the Web: HTML</h2>
 
-          <img
-            src="img/laura-jones.jpg"
-            alt="Laura Jones"
-            width="50"
-            height="50"
-            class="author-img"
-          />
+          <div class="author-box">
+            <img
+              src="img/laura-jones.jpg"
+              alt="Laura Jones"
+              width="50"
+              height="50"
+              class="author-img"
+            />
 
-          <p class="author">
-            Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
-          </p>
-
+            <p class="author">
+              Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+            </p>
+          </div>
           <!--!!!!JPG/ALT won't load!!!!
     img=insert image + Attribute decribing element scr=source image file  ALT=decribes the image file for search engine-->
           <img
@@ -125,37 +126,48 @@
         <!--Semantic HTML= organizes your code-->
         <h4><strong>Related Posts</strong></h4>
         <ul class="related">
-          <li>
+          <li class="related-post">
             <img
               src="img/related-1.jpg"
               alt="Image of man typing code"
               width="75"
               height="75"
             />
-
-            <a href="wed-dev.html"> How to Learn Web Development</a>
-            <p class="related-author">By Jonas Smith</p>
+            <div>
+              <a href="wed-dev.html" class="related-link">
+                How to Learn Web Development</a
+              >
+              <p class="related-author">By Jonas Smith</p>
+            </div>
           </li>
-          <li>
+          <li class="related-post">
             <img
               src="img/related-2.jpg"
               alt="Image of lightning strike in the dark"
               width="75"
               height="75"
             />
-            <a href="The Unknown Powers of CSS">The Unknown Powers of CSS</a>
-            <p class="related-author">By Jim Dumar</p>
+            <div>
+              <a href="The Unknown Powers of CSS" class="related-link"
+                >The Unknown Powers of CSS</a
+              >
+              <p class="related-author">By Jim Dumar</p>
+            </div>
           </li>
 
-          <li>
+          <li class="related-post">
             <img
               src="img/related-3.jpg"
               alt="Imagine of computer code on pc screen"
               height="75"
               width="75"
             />
-            <a href="Why JavaScript is Awesome">Why JavaScript is Awesome</a>
-            <p class="related-author">By Ariana Grande</p>
+            <div>
+              <a href="Why JavaScript is Awesome" class="related-link"
+                >Why JavaScript is Awesome</a
+              >
+              <p class="related-author">By Ariana Grande</p>
+            </div>
           </li>
         </ul>
       </aside>
