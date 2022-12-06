@@ -298,3 +298,19 @@ footer {
   margin-bottom: 0;
   font-style: italic;
 }
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+/* flex-grow: 0;
+   flex-shrink: 1;
+   flex-basis: auto; */
+.article {
+  flex: 1;
+  margin-bottom: 0;
+}
+.aside {
+  flex: 0 0 300px;
+}
