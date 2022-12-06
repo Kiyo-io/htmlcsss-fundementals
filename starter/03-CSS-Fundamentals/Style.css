@@ -1,10 +1,8 @@
 /* Universal Selector */
-/* * {
-  border-top: 10px solid black;
-} */
 * {
   margin: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTION */
@@ -15,7 +13,7 @@ body {
   position: relative;
 }
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-right: auto;
   margin-left: auto; */
   margin: 0 auto;
@@ -37,7 +35,7 @@ p {
 } */
 
 nav {
-  font-size: 15px;
+  font-size: 20px;
 }
 article {
   margin-bottom: 60px;
@@ -49,8 +47,8 @@ article {
 aside {
   background-color: rgb(252, 226, 219);
   border-top: 5px double rgb(67, 44, 122);
-  padding: 50px 0;
-  width: 500px;
+  /* Padding is not needed if you need a litteral box and control width for layout for content  */
+  padding: 50px 40px;
 }
 /* 
 SMALLER ELEMENT */
@@ -60,7 +58,7 @@ h3 {
   color: rgb(255, 143, 177);
 }
 h1 {
-  font-size: 25px;
+  font-size: 35px;
   text-transform: uppercase;
   font-style: italic;
 }
@@ -79,6 +77,7 @@ h4 {
 
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 p {
   font-size: 20px;
@@ -119,8 +118,9 @@ article header p {
   font-size: 18px;
   font-weight: bold;
 }
-.author-photos {
+.related {
   list-style: none;
+  margin-left: 0;
 }
 
 body {
@@ -254,4 +254,16 @@ nav {
   clear: both;
   content: "";
   display: block;
+}
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
 }
