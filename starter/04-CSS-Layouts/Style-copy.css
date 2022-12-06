@@ -26,7 +26,6 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
   height: 80px;
 }
 /* nav a:link,
@@ -36,9 +35,6 @@ p {
 
 nav {
   font-size: 20px;
-}
-article {
-  margin-bottom: 60px;
 }
 .post-heaader {
   margin-bottom: 30px;
@@ -298,19 +294,42 @@ footer {
   margin-bottom: 0;
   font-style: italic;
 }
+/* FLEXBOX LAYOUT
 .row {
   display: flex;
   gap: 75px;
   margin-bottom: 60px;
   align-items: flex-start;
 }
-/* flex-grow: 0;
+flex-grow: 0;
    flex-shrink: 1;
-   flex-basis: auto; */
+   flex-basis: auto;
 .article {
   flex: 1;
   margin-bottom: 0;
 }
 .aside {
   flex: 0 0 300px;
+} */
+
+/* CSS GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1/-1;
+}
+
+/* article {
+}
+aside {
+} */
+footer {
+  background-color: black;
+  grid-column: 1/-1;
 }
