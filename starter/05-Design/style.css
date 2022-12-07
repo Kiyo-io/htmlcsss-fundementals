@@ -105,6 +105,8 @@ img {
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
+  /* font-size: 18px;
+  line-height: 1.7; */
 }
 
 /* CHAIRS */
@@ -114,6 +116,7 @@ img {
 
 h3 {
   margin-bottom: 24px;
+  font-size: 20px;
 }
 
 .chair-details {
@@ -138,8 +141,10 @@ h3 {
 .chair-price {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 footer {
   margin-bottom: 48px;
+  font-size: 12px;
 }
