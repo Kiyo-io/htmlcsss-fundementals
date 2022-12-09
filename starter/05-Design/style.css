@@ -6,8 +6,9 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 /* MAIN COLORS
-#245b38
-#0b1b11
+main #245b38
+text #0b1b11
+tint #3a6b4c
  */
 
 * {
@@ -44,6 +45,8 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
+
+  /* BUTTON */
 }
 .btn:link,
 .btn:visited {
