@@ -93,6 +93,8 @@ h1 {
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
+
+  text-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-text {
