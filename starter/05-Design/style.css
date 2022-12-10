@@ -150,6 +150,7 @@ img {
 /* CHAIRS */
 .chair-box {
   padding: 24px;
+  box-shadow: 20px 20px 20px 10px black;
 }
 
 h3 {
