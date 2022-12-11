@@ -59,6 +59,7 @@ h2 {
 
   display: inline-block;
   font-weight: 500;
+  border-radius: 50px;
 }
 .btn:hover,
 .btn:active {
