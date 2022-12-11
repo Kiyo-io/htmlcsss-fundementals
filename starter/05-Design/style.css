@@ -158,6 +158,7 @@ img {
 }
 .chair img {
   border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .chair-box {
   padding: 24px;
