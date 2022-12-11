@@ -102,6 +102,7 @@ h1 {
 }
 
 img {
+  border-radius: 12px;
   width: 100%;
 }
 
@@ -126,6 +127,7 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  border-radius: 12px;
   background-color: #245b38;
   color: #fff;
   padding: 24px;
