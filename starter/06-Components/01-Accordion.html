@@ -28,6 +28,13 @@
         margin: 100px auto;
       }
       .item {
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 24px;
+        row-gap: 32px;
+        align-items: center;
       }
 
       .number,
@@ -43,6 +50,7 @@
         stroke: #245b38;
       }
       .hidden-box {
+        grid-column: 2;
       }
 
       .hidden-box p {
@@ -61,6 +69,56 @@
     </style>
   </head>
   <body>
+    <div class="accordion">
+      <div class="item">
+        <p class="number">1</p>
+        <p class="text">Where are these chairs assembled?</p>
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <rect width="256" height="256" fill="none"></rect>
+          <polyline
+            points="208 96 128 176 48 96"
+            fill="none"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          ></polyline>
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel fugit
+            aliquam quas laudantium reiciendis eligendi facere nam, labore at
+            aliquid impedit eveniet, ipsa hic minus. Dicta corrupti architecto
+            in ut.
+          </p>
+          <ul>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Asperiores
+            </li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Asperiores
+            </li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Asperiores
+            </li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Asperiores
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="accordion">
       <div class="item">
         <p class="number">2</p>
