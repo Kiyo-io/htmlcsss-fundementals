@@ -26,20 +26,35 @@
         width: 700px;
         margin: 100px auto;
       }
-
-
-      .number .item{ font-size: 24px; font-weight: bold;
-
+      .item {
       }
 
-      .text {
+      .number .text {
+        font-size: 24px;
+        font-weight: 500;
+        color: pink;
       }
+
       .icon {
         width: 24px;
         height: 24px;
-        stroke: ;#245b38
+        stroke: palevioletred;
       }
-      .hiddenbox {
+      .hidden-box {
+      }
+
+      .hidden-box p {
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+
+      .hidden-box ul {
+        color: #bdc3c7;
+        margin-left: 16px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
       }
     </style>
   </head>
@@ -66,7 +81,7 @@
             stroke-width="16"
           ></polyline>
         </svg>
-        <div class="hiddenbox">
+        <div class="hidden-box">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel fugit
             aliquam quas laudantium reiciendis eligendi facere nam, labore at
