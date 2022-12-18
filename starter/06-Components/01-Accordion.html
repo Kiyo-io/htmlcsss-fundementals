@@ -26,6 +26,10 @@
       .accordion {
         width: 700px;
         margin: 100px auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
       }
       .item {
         box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
@@ -37,13 +41,21 @@
         align-items: center;
       }
 
+      .open {
+        border-top: 4px solid #245b38;
+      }
+      .open .hidden-box {
+        display: block;
+      }
       .number,
       .text {
         font-size: 24px;
         font-weight: 500;
-        color: #245b38;
+        /* color: #245b38; */
       }
-
+      .number {
+        color: #bdc3c7;
+      }
       .icon {
         width: 24px;
         height: 24px;
@@ -51,6 +63,7 @@
       }
       .hidden-box {
         grid-column: 2;
+        display: none;
       }
 
       .hidden-box p {
@@ -118,7 +131,7 @@
           </ul>
         </div>
       </div>
-      <div class="item">
+      <div class="open">
         <p class="number">2</p>
         <p class="text">How long do I have to return my chair?</p>
         <svg
